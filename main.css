@@ -18,3 +18,11 @@ body {
 .full-page {
     text-align: center;
 }
+
+#projectsPage {
+    display: none;
+}
+
+#technologiesPage{
+    display: none;
+}

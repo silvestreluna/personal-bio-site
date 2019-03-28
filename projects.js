@@ -1,3 +1,11 @@
+const bioButton = document.getElementById('bioButton');
+const techButton = document.getElementById('techButton');
+const prjButton = document.getElementById('prjButton');
+const contactButton = document.getElementById('contactMe');
+
+
+
+
 const projects = [
     {
         title: "Product Cards", 
@@ -84,8 +92,29 @@ const createProjectCards = () => {
 };
 
 
+// Add eventListeners to buttons in the deader
+ const buttonsEvent = () => {
+    bioButton.addEventListener('click', showPage);
+    techButton.addEventListener('click', showPage);
+    prjButton.addEventListener('click', showPage);
+    contactButton.addEventListener('click', showPage);
+ };
+
+ const showPage =(e) => {
+     const currentId = e.target.id; 
+     const getDiv = document.getElementById('projectsPage');
+     if (currentId === 'prjButton') {
+        getDiv.style.display = 'block'
+     } else {
+         getDiv.style.display = 'none';
+     } return false;
+ }
+
+
+
 const init = () => {
     createProjectCards();
+    buttonsEvent();
 };
 
 init();
