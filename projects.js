@@ -1,7 +1,7 @@
 const bioButton = document.getElementById('bioButton');
 const techButton = document.getElementById('techButton');
 const prjButton = document.getElementById('prjButton');
-const contactButton = document.getElementById('contactMe');
+
 
 
 
@@ -91,24 +91,38 @@ const createProjectCards = () => {
     printToDom('projectsPage', domString);
 };
 
+const showPage =() => {
+    const bioPage = document.getElementById('bioPage');
+    const technologiesPage = document.getElementById('technologiesPage');
+    const projectsPage = document.getElementById('projectsPage');
+
+
+    if(bioPage.style.display === 'block' ) {
+
+        bioPage.style.display = 'none';
+
+
+    } else{
+
+        bioPage.style.display = 'block';
+
+    }
+};
+
+
+
+
 
 // Add eventListeners to buttons in the deader
  const buttonsEvent = () => {
+  
     bioButton.addEventListener('click', showPage);
     techButton.addEventListener('click', showPage);
-    prjButton.addEventListener('click', showPage);
-    contactButton.addEventListener('click', showPage);
+
+    document.getElementById('bioButton').addEventListener('click', showPage);
+
  };
 
- const showPage =(e) => {
-     const currentId = e.target.id; 
-     const getDiv = document.getElementById('projectsPage');
-     if (currentId === 'prjButton') {
-        getDiv.style.display = 'block'
-     } else {
-         getDiv.style.display = 'none';
-     } return false;
- }
 
 
 

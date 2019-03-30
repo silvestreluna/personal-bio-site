@@ -1,6 +1,7 @@
 body {
-    background-color: ghostwhite;       
-    
+    background-color: ghostwhite;     
+
+
 }
 
 .projects {
@@ -16,13 +17,29 @@ body {
 }
 
 .full-page {
+
     text-align: center;
 }
 
-#projectsPage {
+.fullPage {
+    margin: 18px;
+}
+
+footer {
+
+    margin-left: -15px;
+    margin-right: -15px;
+    text-align: center;
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.fullPage {
     display: none;
 }
 
-#technologiesPage{
-    display: none;
+
+a {
+    color: #fff;
 }
