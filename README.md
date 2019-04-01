@@ -1,7 +1,7 @@
 # My Personal page
 
 ## Screenshot
-![Bio-page](https://raw.githubusercontent.com/silvestreluna/personal-bio-site/master/img/personal-bio-page.png)
+![Bio-page](https://raw.githubusercontent.com/silvestreluna/personal-bio-site/master/img/biopage2.png)
 
 ## Getting Started
 ```
