@@ -1,3 +1,17 @@
+const navClasses = document.getElementsByClassName('navbar');
+const bioPage = document.getElementById('bioPage');
+const techPage = document.getElementById('technologiesPage');
+const prjPage = document.getElementById('projectsPage');
+
+
+const hidePages = () => {
+    bioPage.classList.remove('d-none');
+    techPage.classList.add('d-none');
+    prjPage.classList.add('d-none');
+};
+
+
+
 const projects = [
     {
         title: "Product Cards", 
@@ -74,9 +88,9 @@ const createProjectCards = () => {
             domString += `<img src="${projects[i].screenshot}">`;
             domString += `<p>${projects[i].description}</p>`;
             domString += `<p>${projects[i].technologiesUsed}</p>`;
-            domString += `<a href="${projects[i].url}">Link</a> <br>`;
+            domString += `<a href="${projects[i].url}">Link</a> </br>`;
             domString += `<a href="${projects[i].githubUrl}">GitHub</a>`;
-            domString += `</div>`
+            domString += `</div>`;
         };
     
     }; 
@@ -84,8 +98,50 @@ const createProjectCards = () => {
 };
 
 
+
+const showPage = (e) => {
+    const currentId = e.target.id;
+    console.log(currentId);
+    if(currentId === 'bioButton') {
+        bioPage.classList.remove('d-none');
+        prjPage.classList.add('d-none');
+        techPage.classList.add('d-none');
+
+    } else if (currentId === 'my-name') {
+        bioPage.classList.remove('d-none');
+        prjPage.classList.add('d-none');
+        techPage.classList.add('d-none');
+        
+    } else if (currentId === 'techButton') {
+        bioPage.classList.add('d-none');
+        prjPage.classList.add('d-none');
+        techPage.classList.remove('d-none');
+        
+    } else if(currentId === 'prjButton') {
+        bioPage.classList.add('d-none');
+        techPage.classList.add('d-none');
+        prjPage.classList.remove('d-none');
+    };
+    
+};
+
+
+
+
+// Add eventListeners to buttons in the deader
+ const buttonsEvent = () => {
+    for (let i = 0; i < navClasses.length; i++) {
+        navClasses[i].addEventListener('click', showPage);
+    };
+ };
+
+
+
+
 const init = () => {
+    hidePages();
     createProjectCards();
+    buttonsEvent();
 };
 
 init();

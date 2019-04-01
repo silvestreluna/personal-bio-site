@@ -1,14 +1,52 @@
+html {
+    height: 100%;;
+}
+
 body {
-    background-color: ghostwhite;       
-    font-family: 'Lora', serif;
+    background-color: ghostwhite;
+    min-height: 100%;   
+    position: relative;
+    padding-bottom: 60px;
+    margin: 0;
 }
 
 .projects {
-  
-
     width: 250px;
     border: 2px solid slategrey;
     margin: 10px;
     padding: 20px;
-
 }
+
+.nav-link {
+    color: white;
+    font-family: inherit;
+}
+
+.full-page {
+
+    text-align: center;
+}
+
+.fullPage {
+    margin: 18px;
+    position: relative;
+}
+
+
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    position: absolute;
+    width: 100%;
+
+    background-color: #343a40;
+    color: white;
+    border-top: 1px solid rgba(0,0,0,.125);
+    bottom: 0;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: 0 !important;
+}
+
