@@ -1,8 +1,14 @@
-const bioButton = document.getElementById('bioButton');
-const techButton = document.getElementById('techButton');
-const prjButton = document.getElementById('prjButton');
+const navClasses = document.getElementsByClassName('nav-link');
+const bioPage = document.getElementById('bioPage');
+const techPage = document.getElementById('technologiesPage');
+const prjPage = document.getElementById('projectsPage');
 
 
+const hidePages = () => {
+    bioPage.classList.add('d-none');
+    techPage.classList.add('d-none');
+    prjPage.classList.add('d-none');
+};
 
 
 
@@ -82,51 +88,54 @@ const createProjectCards = () => {
             domString += `<img src="${projects[i].screenshot}">`;
             domString += `<p>${projects[i].description}</p>`;
             domString += `<p>${projects[i].technologiesUsed}</p>`;
-            domString += `<a href="${projects[i].url}">Link</a> <br>`;
+            domString += `<a href="${projects[i].url}">Link</a> </br>`;
             domString += `<a href="${projects[i].githubUrl}">GitHub</a>`;
-            domString += `</div>`
+            domString += `</div>`;
         };
     
     }; 
     printToDom('projectsPage', domString);
 };
 
-const showPage =() => {
-    const bioPage = document.getElementById('bioPage');
-    const technologiesPage = document.getElementById('technologiesPage');
-    const projectsPage = document.getElementById('projectsPage');
 
 
-    if(bioPage.style.display === 'block' ) {
+const showPage = (e) => {
+    const currentId = e.target.id;
+    console.log(currentId);
+    if(currentId === 'bioButton') {
+        bioPage.classList.remove('d-none');
+        prjPage.classList.add('d-none');
+        techPage.classList.add('d-none');
 
-        bioPage.style.display = 'none';
+    } else if (currentId === 'techButton') {
+        bioPage.classList.add('d-none');
+        prjPage.classList.add('d-none');
+        techPage.classList.remove('d-none');
+        
+    } else if(currentId === 'prjButton') {
+        bioPage.classList.add('d-none');
+        techPage.classList.add('d-none');
+        prjPage.classList.remove('d-none');
 
-
-    } else{
-
-        bioPage.style.display = 'block';
-
-    }
+    };
+    
 };
-
 
 
 
 
 // Add eventListeners to buttons in the deader
  const buttonsEvent = () => {
-  
-    bioButton.addEventListener('click', showPage);
-    techButton.addEventListener('click', showPage);
-
-    document.getElementById('bioButton').addEventListener('click', showPage);
-
+    for (let i = 0; i < navClasses.length; i++) {
+        navClasses[i].addEventListener('click', showPage);
+    };
  };
 
 
 
 
 const init = () => {
+    hidePages();
     createProjectCards();
     buttonsEvent();
 };

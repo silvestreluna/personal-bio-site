@@ -1,7 +1,7 @@
 body {
-    background-color: ghostwhite;     
-
-
+    background-color: ghostwhite;
+    height: 100%;   
+      
 }
 
 .projects {
@@ -11,7 +11,7 @@ body {
     padding: 20px;
 }
 
-.navbar {
+.nav-link {
     color: white;
     font-family: inherit;
 }
@@ -23,23 +23,19 @@ body {
 
 .fullPage {
     margin: 18px;
+    overflow: hidden;
 }
 
-footer {
 
-    margin-left: -15px;
-    margin-right: -15px;
-    text-align: center;
+
+#footer {
+
     padding: .75rem 1.25rem;
-    background-color: rgba(0,0,0,.03);
+
+    background-color: #343a40;
+    color: white;
     border-top: 1px solid rgba(0,0,0,.125);
+    bottom: 0;
+
 }
 
-.fullPage {
-    display: none;
-}
-
-
-a {
-    color: #fff;
-}
