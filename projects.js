@@ -1,11 +1,11 @@
-const navClasses = document.getElementsByClassName('nav-link');
+const navClasses = document.getElementsByClassName('navbar');
 const bioPage = document.getElementById('bioPage');
 const techPage = document.getElementById('technologiesPage');
 const prjPage = document.getElementById('projectsPage');
 
 
 const hidePages = () => {
-    bioPage.classList.add('d-none');
+    bioPage.classList.remove('d-none');
     techPage.classList.add('d-none');
     prjPage.classList.add('d-none');
 };
@@ -107,6 +107,11 @@ const showPage = (e) => {
         prjPage.classList.add('d-none');
         techPage.classList.add('d-none');
 
+    } else if (currentId === 'my-name') {
+        bioPage.classList.remove('d-none');
+        prjPage.classList.add('d-none');
+        techPage.classList.add('d-none');
+        
     } else if (currentId === 'techButton') {
         bioPage.classList.add('d-none');
         prjPage.classList.add('d-none');
@@ -116,7 +121,6 @@ const showPage = (e) => {
         bioPage.classList.add('d-none');
         techPage.classList.add('d-none');
         prjPage.classList.remove('d-none');
-
     };
     
 };

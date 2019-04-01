@@ -1,7 +1,13 @@
+html {
+    height: 100%;;
+}
+
 body {
     background-color: ghostwhite;
-    height: 100%;   
-      
+    min-height: 100%;   
+    position: relative;
+    padding-bottom: 60px;
+    margin: 0;
 }
 
 .projects {
@@ -23,19 +29,24 @@ body {
 
 .fullPage {
     margin: 18px;
-    overflow: hidden;
+    position: relative;
 }
 
 
 
 #footer {
-
-    padding: .75rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    position: absolute;
+    width: 100%;
 
     background-color: #343a40;
     color: white;
     border-top: 1px solid rgba(0,0,0,.125);
     bottom: 0;
-
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: 0 !important;
 }
 
