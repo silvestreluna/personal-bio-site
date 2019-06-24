@@ -1,0 +1,86 @@
+@import "~bootstrap/scss/bootstrap";
+
+.my-nav {
+  min-height: 70px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.logo {
+font-size: 30px;
+}
+
+.my-nav-bar {
+  background-color:  #1E88E5 !important;
+
+}
+
+.my-nav {
+  color: #fff !important;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 15px;
+}
+
+#navbarNav {
+  justify-content: center;
+}
+
+.about-me{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 3rem;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: #f8f9fa;
+}
+
+.techs {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 20px;
+  padding: 3rem;
+}
+
+ ul > li {
+   display: inline-block;
+ }
+
+.card-img {
+  width: 150px;
+  height: 100px;
+}
+
+#projects-page {
+  background-color: #f8f9fa;
+  padding: 2rem;
+}
+
+.card-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.each-card {
+  width: 200px;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.15) !important;
+}
+
+ .page-footer {
+  position: sticky;
+   background-color: #eee;
+   padding: 62px 0;
+  margin: 0;
+ }
+
+ .footer-items {
+   display: flex;
+   justify-content: center;
+ }
