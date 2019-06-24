@@ -1,16 +1,5 @@
+import 'bootstrap';
 import '../styles/main.scss';
-
-const navClasses = document.getElementsByClassName('navbar');
-const bioPage = document.getElementById('bioPage');
-const techPage = document.getElementById('technologiesPage');
-const prjPage = document.getElementById('projectsPage');
-
-
-const hidePages = () => {
-  bioPage.classList.remove('d-none');
-  techPage.classList.add('d-none');
-  prjPage.classList.add('d-none');
-};
 
 
 const projects = [
@@ -80,58 +69,22 @@ const printToDom = (divId, printStuff) => {
 
 
 const createProjectCards = () => {
-  let domString = '';
-  for (let i = 0; i < projects.length; i += 1) {
-    if (projects[i].available === true) {
-      domString += '<div class="projects">';
-      domString += `<h3>${projects[i].title}</h3>`;
-      domString += `<img src="${projects[i].screenshot}">`;
-      domString += `<p>${projects[i].description}</p>`;
-      domString += `<p>${projects[i].technologiesUsed}</p>`;
-      domString += `<a href="${projects[i].url}">Link</a> </br>`;
-      domString += `<a href="${projects[i].githubUrl}">GitHub</a>`;
-      domString += '</div>';
-    }
-  }
-  printToDom('projectsPage', domString);
-};
-
-
-const showPage = (e) => {
-  const currentId = e.target.id;
-  console.error(currentId);
-  if (currentId === 'bioButton') {
-    bioPage.classList.remove('d-none');
-    prjPage.classList.add('d-none');
-    techPage.classList.add('d-none');
-  } else if (currentId === 'my-name') {
-    bioPage.classList.remove('d-none');
-    prjPage.classList.add('d-none');
-    techPage.classList.add('d-none');
-  } else if (currentId === 'techButton') {
-    bioPage.classList.add('d-none');
-    prjPage.classList.add('d-none');
-    techPage.classList.remove('d-none');
-  } else if (currentId === 'prjButton') {
-    bioPage.classList.add('d-none');
-    techPage.classList.add('d-none');
-    prjPage.classList.remove('d-none');
-  }
-};
-
-
-// Add eventListeners to buttons in the deader
-const buttonsEvent = () => {
-  for (let i = 0; i < navClasses.length; i += 1) {
-    navClasses[i].addEventListener('click', showPage);
-  }
+  let domString = '<div class="card-deck text-center card-container">';
+  projects.forEach((project) => {
+    domString += '<div class="each-card m-2">';
+    domString += `<img src=${project.screenshot} />`;
+    domString += `<h3 class="card-title">${project.title}</h3>`;
+    domString += `<p>${project.description}</p>`;
+    domString += `<p>${project.technologiesUsed}</p>`;
+    domString += '</div>';
+  });
+  domString += '</div>';
+  printToDom('projects-page', domString);
 };
 
 
 const init = () => {
-  hidePages();
   createProjectCards();
-  buttonsEvent();
 };
 
 init();

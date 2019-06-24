@@ -12,72 +12,69 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-dark bg-dark">
-    <!-- TODO: Insert some sort of H1-H6 with your name here -->
-    <a class="navbar-brand" id="my-name" href="#">Silvestre Luna</a>
-      <ul class="nav justify-content-center" >
-        <li class="nav-item active">
-          <a class="nav-link" href="#" id="bioButton">Bio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" id="techButton">Technologies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" id="prjButton">Projects</a>
-        </li>
-      </ul>
-    
-  </nav>
-
+  <div class="my-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark my-nav-bar">
+      <a class="navbar-brand my-nav" href="#"><span class="logo">Silvestre Luna</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse my-nav" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Bio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Technologies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
   <!-- End Navigation -->
+  <div class="container-fluid">
+    <!-- Primary View -->
+    <div class="about-me" id="bioPage">
+      <h2>Hello World!</h2>
+      <p>Welcome to my page.</p>
+    </div>
 
-  <!-- Primary View -->
-  <div class="fullPage" id="bioPage">
-    <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
-    <h4>Background</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus sem, finibus eget iaculis id, laoreet a
-      quam.
-      Pellentesque id iaculis ligula. Aenean in enim vulputate, pretium risus sagittis, efficitur purus. Integer eu
-      lorem tellus.
-      Fusce vitae risus bibendum, lacinia sem ac, iaculis lorem. Morbi ac mattis erat, ac vulputate.</p>
+    <div class="techs">
+      <!-- TODO: Start an UL of all of the tools and technologies you've started learning so far. (You'll beef this page up later). -->
+        <h4>Tools and Technologies</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+          <li>CSS</li>
+          <li>GIT</li>
+        </ul>
+    </div>
 
-    <h4>Why development?</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus sem, finibus eget iaculis id, laoreet a
-      quam.
-      Pellentesque id iaculis ligula. Aenean in enim vulputate, pretium risus sagittis, efficitur purus. Integer eu
-      lorem tellus.
-      Fusce vitae risus bibendum, lacinia sem ac, iaculis lorem. Morbi ac mattis erat, ac vulputate.</p>
-
-    <h4>Best part of development</h4>
-    <p>Everything!</p>
+    <div class="full-page row d-flex justify-content-center" id="projects-page">
+    </div>
+    <!-- End Primary View -->
   </div>
-  <div class="fullPage" id="technologiesPage">
-  
-    <!-- TODO: Start an UL of all of the tools and technologies you've started learning so far. (You'll beef this page up later). -->
-    <h4>Tools and Technologies</h4>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JS</li>
-      <li>CSS</li>
-      <li>GIT</li>
-    </ul>
-  </div>
-  <div class="full-page row" id="projectsPage">
-  </div>
-
-  <!-- End Primary View -->
 
   <!-- Footer -->
-  <footer class="page-footer  my-2" id="footer">
-
-    <!-- TODO: Fill in contact info here: Include things like email, LinkedIn, Twitter and GitHub links. -->
-    <h4>Contact Me:</h4>
-    <p><a href="https://github.com/silvestreluna">GitHub</a></p>
-  </footer>
+  <div class="page-footer">
+    <footer>
+      <div class="footer-items">
+        <ul>
+          <li>
+            <a href="https://github.com/silvestreluna">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
   <!-- End Footer -->
-
-
 </body>
 
 </html>
