@@ -1,0 +1,22 @@
+{
+  "project1": {
+    "title": "Movie-History",
+    "screenshot": "https://raw.githubusercontent.com/silvestreluna/Movie-History/master/assets/home.png",
+    "description": "Somehting something something cool",
+    "technologiesUsed": "HTML/CSS/JS",
+    "available": true,
+    "url": "https://movie-history-b6c25.firebaseapp.com",
+    "githubUrl": "https://github.com/silvestreluna/Movie-History",
+    "id": "project1"
+  },
+  "project2": {
+    "title": "Tamagotchi",
+    "screenshot": "https://raw.githubusercontent.com/silvestreluna/Tamagotchi/master/img/tamagotchi.png",
+    "description": "Somehting something something cool",
+    "technologiesUsed": "HTML/CSS/JS",
+    "available": true,
+    "url": "https://tamagotchi-ad0d7.firebaseapp.com",
+    "githubUrl": "https://github.com/silvestreluna/Tamagotchi",
+    "id": "project2"
+  }
+}
