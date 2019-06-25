@@ -8,9 +8,3 @@ const init = () => {
 };
 
 init();
-
-
-// Initialize Firebase
-// We have to something like this to initilize firebase.
-// Change the item inside the () to importName.objectname
-// firebase.initializeApp(firebaseConfig);
