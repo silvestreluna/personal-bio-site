@@ -9,8 +9,8 @@ const createProjectCards = (array) => {
     domString += `<h3 class="project-title">${project.title}</h3>`;
     domString += `<p class="project-desc">${project.description}</p>`;
     domString += '<div>';
-    domString += `<a href=${project.url} target="_blank">Visit Page</a> </br>`;
-    domString += `<a href=${project.githubUrl} target="_blank">GitHub</a>`;
+    domString += `<a href=${project.url} target="_blank"><i class="fas fa-external-link-alt"></i></a> </br>`;
+    domString += `<a href=${project.githubUrl} target="_blank"><i class="fab fa-github"></i></a>`;
     domString += '</div>';
     domString += '</div>';
   });
