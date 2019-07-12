@@ -22,11 +22,21 @@
   "project3": {
     "title": "Tamagotchi",
     "screenshot": "https://raw.githubusercontent.com/silvestreluna/temperature-converter/master/images/Screen%20Shot%202019-03-22%20at%208.29.43%20PM.png",
-    "description": "his program converts a temperature from fahrenheit to celsius, or from celsius to fahrenheit.",
+    "description": "This program converts a temperature from fahrenheit to celsius, or from celsius to fahrenheit.",
     "technologiesUsed": "HTML/CSS/JS",
     "available": true,
     "url": "https://temperature-converter-971f2.firebaseapp.com",
     "githubUrl": "https://github.com/silvestreluna/temperature-converter",
     "id": "project3"
+  },
+  "project4": {
+    "title": "Doggie Day Care",
+    "screenshot": "https://raw.githubusercontent.com/silvestreluna/temperature-converter/master/ima",
+    "description": "",
+    "technologiesUsed": "JS, React, Bootstrap",
+    "available": true,
+    "url": "doggie-day-care-50736.firebaseapp.com",
+    "githubUrl": "https://github.com/silvestreluna/doggie-day-care",
+    "id": "project4"
   }
 }
