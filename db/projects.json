@@ -2,7 +2,7 @@
   "project1": {
     "title": "Movie-History",
     "screenshot": "https://raw.githubusercontent.com/silvestreluna/Movie-History/master/assets/home.png",
-    "description": "Somehting something something cool",
+    "description": "A web page where users can keep track of movies they have watched or want to watch. Users have multiple features such as adding, editing, rating movies and an option to add to a watchlist for later.",
     "technologiesUsed": "HTML/CSS/JS",
     "available": true,
     "url": "https://movie-history-b6c25.firebaseapp.com",
@@ -12,7 +12,7 @@
   "project2": {
     "title": "Tamagotchi",
     "screenshot": "https://raw.githubusercontent.com/silvestreluna/Tamagotchi/master/img/tamagotchi.png",
-    "description": "Somehting something something cool",
+    "description": "This web page is a digital virtual pet, like the famous 90's game, Tamagotchi.",
     "technologiesUsed": "HTML/CSS/JS",
     "available": true,
     "url": "https://tamagotchi-ad0d7.firebaseapp.com",
@@ -20,7 +20,7 @@
     "id": "project2"
   },
   "project3": {
-    "title": "Tamagotchi",
+    "title": "temperature-converter",
     "screenshot": "https://raw.githubusercontent.com/silvestreluna/temperature-converter/master/images/Screen%20Shot%202019-03-22%20at%208.29.43%20PM.png",
     "description": "This program converts a temperature from fahrenheit to celsius, or from celsius to fahrenheit.",
     "technologiesUsed": "HTML/CSS/JS",
@@ -31,8 +31,8 @@
   },
   "project4": {
     "title": "Doggie Day Care",
-    "screenshot": "https://raw.githubusercontent.com/silvestreluna/temperature-converter/master/ima",
-    "description": "",
+    "screenshot": "https://raw.githubusercontent.com/silvestreluna/doggie-day-care/master/assets/doggiedaycare.png",
+    "description": "Doggie day care is web page that shows a list of Dogs cards. Each dog displays the name of a employee that will be walking the dog and date the dog will be walked. ",
     "technologiesUsed": "JS, React, Bootstrap",
     "available": true,
     "url": "doggie-day-care-50736.firebaseapp.com",
