@@ -50,6 +50,19 @@ ul {
   // background-color: #eee;
 }
 
+.myPhoto {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  // margin-bottom: 40px;
+}
+
+.photoImg {
+  width: 100%;
+  height: auto;
+}
 
 
 .techs {
