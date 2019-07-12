@@ -3,6 +3,7 @@ import util from '../helpers/util';
 
 const createProjectCards = (array) => {
   let domString = '<div class="card-deck text-center card-container">';
+  domString += '<div class="card-wrapper">';
   array.forEach((project) => {
     domString += '<div class="each-card m-2">';
     domString += `<img class="card-img" src=${project.screenshot} />`;
@@ -14,6 +15,7 @@ const createProjectCards = (array) => {
     domString += '</div>';
     domString += '</div>';
   });
+  domString += '</div>';
   domString += '</div>';
   util.printToDom('projects-page', domString);
 };
