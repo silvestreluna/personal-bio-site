@@ -32,7 +32,7 @@
   "project4": {
     "title": "Doggie Day Care",
     "screenshot": "https://raw.githubusercontent.com/silvestreluna/doggie-day-care/master/assets/doggiedaycare.png",
-    "description": "Doggie day care is web page that shows a list of Dogs cards. Each dog displays the name of a employee that will be walking the dog and date the dog will be walked. ",
+    "description": "Doggie day care is web page that shows a list of Dog cards. Each dog displays the name of a employee that will be walking the dog and date the dog will be walked. ",
     "technologiesUsed": "JS, React, Bootstrap",
     "available": true,
     "url": "doggie-day-care-50736.firebaseapp.com",
