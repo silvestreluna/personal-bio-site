@@ -35,7 +35,7 @@
     "description": "Doggie day care is web page that shows a list of Dog cards. Each dog displays the name of a employee that will be walking the dog and date the dog will be walked. ",
     "technologiesUsed": "JS, React, Bootstrap",
     "available": true,
-    "url": "doggie-day-care-50736.firebaseapp.com",
+    "url": "https://doggie-day-care-50736.firebaseapp.com",
     "githubUrl": "https://github.com/silvestreluna/doggie-day-care",
     "id": "project4"
   }
